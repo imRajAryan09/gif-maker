@@ -1,4 +1,4 @@
-let li = document.querySelectorAll('body header nav ul li a');
+let li = document.querySelectorAll('body header nav ul li a span');
 li.forEach(item => {
 	item.addEventListener('click', e => {
 		e.preventDefault();
