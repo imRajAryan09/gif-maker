@@ -61,7 +61,6 @@ body {
   }
 }
 body header {
-  transform: translate(0, -110%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,6 +122,11 @@ body header nav ul li {
   padding: 0 15px;
   transition: all 0.2s ease-in-out;
 }
+body header nav ul li a span {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
 @media (max-device-width: 425px) {
   body header nav ul li {
     font-size: 1.5rem;
@@ -147,7 +151,6 @@ body main {
 body main #hero {
   overflow: hidden;
   height: 75vh;
-  opacity: 0;
   border-radius: 20px;
   padding: 20px 50px;
   border: 1.5px solid;
@@ -160,6 +163,11 @@ body main #hero {
   background-color: #ff9770;
   transition: all 0.13s ease-out;
 }
+@media only screen and (max-device-width: 768px) {
+  body main #hero {
+    padding: 20px 30px;
+  }
+}
 @media (max-device-width: 425px) {
   body main #hero {
     display: flex;
@@ -167,7 +175,7 @@ body main #hero {
     align-items: center;
     flex-direction: column-reverse;
     gap: 2rem;
-    padding: 20px 25px;
+    padding: 20px 15px;
     box-shadow: -10px 5px rgb(24, 18, 19);
   }
 }
@@ -193,7 +201,7 @@ body main #hero .hero-left {
   flex: 1;
   gap: 5rem;
   overflow: hidden;
-  padding-bottom: 2rem;
+  padding: 10px 30px;
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   body main #hero .hero-left {
@@ -212,6 +220,7 @@ body main #hero .hero-left {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 3rem;
   }
 }
 body main #hero .hero-left .hero-text {
@@ -230,8 +239,6 @@ body main #hero .hero-left .hero-text {
 }
 body main #hero .hero-left .hero-text h1 {
   position: relative;
-  right: 110%;
-  opacity: 0;
   font-size: 5rem;
   font-weight: bold;
   color: #000;
@@ -260,8 +267,6 @@ body main #hero .hero-left .hero-text h1 {
 }
 body main #hero .hero-left .hero-text p {
   position: relative;
-  right: 110%;
-  opacity: 0;
   font-size: 1.5rem;
   font-weight: 400;
   color: #000;
@@ -284,8 +289,6 @@ body main #hero .hero-left .hero-text p {
 }
 body main #hero .hero-left .cta-button {
   position: relative;
-  right: 110%;
-  opacity: 0;
   border-radius: 20px;
   padding: 20px 50px;
   color: #000000;
@@ -331,8 +334,6 @@ body main #hero .hero-left .cta-button span {
 }
 body main #hero .hero-right {
   position: relative;
-  left: 110%;
-  opacity: 0;
   flex: 1;
   height: 100%;
   display: flex;
