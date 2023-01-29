@@ -179,8 +179,11 @@ body main #hero {
     align-items: center;
     flex-direction: column-reverse;
     gap: 2rem;
-    padding: 20px 15px;
+    padding: 50px 15px;
     box-shadow: -10px 5px rgb(24, 18, 19);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 body main #hero:hover {
@@ -354,7 +357,6 @@ body main #hero .hero-right {
 }
 @media (max-device-width: 425px) {
   body main #hero .hero-right {
-    background: url("../assets/6zz9k1.gif") no-repeat center;
-    width: 100%;
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
